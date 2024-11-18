@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Flag Guessing Game</h1>
+        <div id="flag-container">
+            <img id="flag-image" src="logo.jpg" alt="Flag">
+            <audio id="background-music" src="background-sound.mp3" loop></audio>
+            <audio id="button-sound" src="button-sound.mp3"></audio>
+        </div>
+        <div id="options-container"></div>
+        <div id="score">Score: 0</div>
+        <div id="timer">Time: 60s</div>
+        <center>
+            <button id="start-btn">Start Game</button>
+        </center>
+    </div>
+
+    <div id="game-over-popup" class="popup hidden">
+        <h2>Game Over</h2>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+
+    <div id="win-popup" class="popup hidden">
+        <h2>You Win!</h2>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
